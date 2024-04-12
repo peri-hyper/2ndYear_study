@@ -1,0 +1,8 @@
+issue
+1: Build 添加环境变量，不然新项目如法找到QT头文件。
+2： UI继承类型修改后需要修改UI_.h
+3： QT项目可重新编译生成UI_.h
+4: signal & slot, 可一对多可多对一， Marco:SIGNAL(valueChanged(int)表示从当前的组件发生变化是发射信号。
+5： slot is private, signal is public.
+5: SIGNAL SLOT机制：
+	MOC表中会存储信号和槽的签名，并且生成中间代码，根据传递进来的函数指针还有信号的ID决定调用哪个函数。
